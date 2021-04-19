@@ -20,9 +20,9 @@ class Umbrella {
         
         if(frameCount>=200){
             image(this.batsman,pos.x,pos.y+70,200,300);
-        }
+        }else{
         
         image(this.image,pos.x,pos.y+70,300,300);
-
+        }
     }
 }

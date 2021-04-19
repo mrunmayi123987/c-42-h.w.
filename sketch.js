@@ -3,13 +3,14 @@ const World = Matter.World;
 const Bodies = Matter.Bodies;
 var thunder, thunder1,thunder2,thunder3,thunder4;
 var batAnimation,bat;
-var rain;
+var rain,rain1,rain2,rain3,rain4,rain5,rain6,rain7,rain8,rain9,rain10,rain11,rain12,rain13,rain15,rain16;
 
 
 var engine, world;
 
 var rand;
-
+var Maxdrops=100;
+              
 
 
 var thunderCreatedFrame=0;
@@ -34,11 +35,130 @@ function setup(){
     createCanvas(400,700);
     umbrella = new Umbrella(200,500);
 
-    rain=new Drops(200,400);
+   rain=new Drops(200,400);
 
     //create drops
-   
     
+    for(var i=0;i<Maxdrops;i=i+2){
+        rain.push= new Drops(random(0,400),random(0,400)); 
+           }
+
+           rain2=new Drops(200,400);
+
+           //create drops
+           
+           for(var i=0;i<Maxdrops;i=i+2){
+               rain2.push= new Drops(random(0,400),random(0,400)); 
+                  }
+                  rain1=new Drops(200,400);
+
+                  //create drops
+                  
+                  for(var i=0;i<Maxdrops;i=i+2){
+                      rain1.push= new Drops(random(0,400),random(0,400)); 
+                         }
+                         rain3=new Drops(200,400);
+
+                         //create drops
+                         
+                         for(var i=0;i<Maxdrops;i=i+2){
+                             rain3.push= new Drops(random(0,400),random(0,400)); 
+                                }
+                                rain4=new Drops(200,400);
+
+                                //create drops
+                                
+                                for(var i=0;i<Maxdrops;i=i+2){
+                                    rain4.push= new Drops(random(0,400),random(0,400)); 
+                                       }
+                                       rain5=new Drops(200,400);
+
+                                       //create drops
+                                       
+                                       for(var i=0;i<Maxdrops;i=i+2){
+                                           rain5.push= new Drops(random(0,400),random(0,400)); 
+                                              }
+                                              rain6=new Drops(200,400);
+
+                                              //create drops
+                                              
+                                              for(var i=0;i<Maxdrops;i=i+2){
+                                                  rain6.push= new Drops(random(0,400),random(0,400)); 
+                                                     }
+                                                     rain7=new Drops(200,400);
+
+                                                     //create drops
+                                                     
+                                                     for(var i=0;i<Maxdrops;i=i+2){
+                                                         rain7.push= new Drops(random(0,400),random(0,400)); 
+     }  
+     
+     
+     rain8=new Drops(200,400);
+
+     //create drops
+     
+     for(var i=0;i<Maxdrops;i=i+2){
+         rain8.push= new Drops(random(0,400),random(0,400)); 
+            }
+
+
+            rain9=new Drops(200,400);
+
+            //create drops
+            
+            for(var i=0;i<Maxdrops;i=i+2){
+                rain9.push= new Drops(random(0,400),random(0,400)); 
+                   }         
+                   rain10=new Drops(200,400);
+
+                   //create drops
+                   
+                   for(var i=0;i<Maxdrops;i=i+2){
+                       rain10.push= new Drops(random(0,400),random(0,400)); 
+                          }        
+                          rain11=new Drops(200,400);
+
+                          //create drops
+                          
+                          for(var i=0;i<Maxdrops;i=i+2){
+                              rain11.push= new Drops(random(0,400),random(0,400)); 
+                                 }        
+                                 rain12=new Drops(200,400);
+
+                                 //create drops
+                                 
+                                 for(var i=0;i<Maxdrops;i=i+2){
+                                     rain12.push= new Drops(random(0,400),random(0,400)); 
+                                        }        
+                                        rain13=new Drops(200,400);
+
+                                        //create drops
+                                        
+                                        for(var i=0;i<Maxdrops;i=i+2){
+                                            rain13.push= new Drops(random(0,400),random(0,400)); 
+                                               }        
+                                               rain14=new Drops(200,400);
+
+                                               //create drops
+                                               
+                                               for(var i=0;i<Maxdrops;i=i+2){
+                                                   rain14.push= new Drops(random(0,400),random(0,400)); 
+                                                      }        
+                                                      rain15=new Drops(200,400);
+
+                                                      //create drops
+                                                      
+                                                      for(var i=0;i<Maxdrops;i=i+2){
+                                                          rain15.push= new Drops(random(0,400),random(0,400)); 
+                                                             }        
+                                                             rain16=new Drops(200,400);
+
+                                                             //create drops
+                                                             
+                                                             for(var i=0;i<Maxdrops;i=i+2){
+                                                                 rain16.push= new Drops(random(0,400),random(0,400)); 
+                                                                    }                                                                                                                                                                                                                                                           
 }
 
 function draw(){
@@ -83,8 +203,27 @@ function draw(){
     umbrella.display();
 
     //display rain drops
+    
+              
+          
    
 rain.display();
+rain1.display();
+rain2.display();
+rain3.display();
+rain4.display();
+rain5.display();
+rain6.display();
+rain7.display();
+rain8.display();
+rain9.display();
+rain10.display();
+rain11.display();
+rain12.display();
+rain13.display();
+rain14.display();
+rain15.display();
+rain16.display();
     drawSprites();
 }   
 
